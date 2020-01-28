@@ -1,0 +1,13 @@
+
+gsutil ls gs://gcpubuntu
+
+To Create a test file
+touch anyfile.txt
+
+gsutil cp testfile.txt gs://gcpubuntu
+
+cd ./gce-disks-export
+
+./gce-disks-export.sh
+
+./gce-disks-export.sh gcpubuntu
